@@ -1,0 +1,102 @@
+html{
+    font-family: monospace;
+    text-align: center;
+}
+/* h1{
+    margin: 5px 15px 10px 33%;
+} */
+
+#calc{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 95vh;
+    height: 100vh;
+    background-color: azure;
+}
+h1{
+    width: 100vh;
+}
+
+.container{
+    background-color:rgb(160, 160, 160);
+    border: 10px solid rgb(139, 139, 139);
+    border-radius: 4px;
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px,auto) repeat(5,80px);
+    gap: 2px;
+}
+
+
+.display{
+    grid-column: 1 / -1;
+    background-color: #ececec;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    margin: 5px;
+    font-size: 5.5em;
+}
+
+button{
+    border:none;
+    transition-duration: 0.05s;
+    margin: 1px;
+    border-radius: 20%;
+    font-weight: initial;
+    font-size: 2em;
+}
+button:hover{
+    /* background-color: rgb(165, 165, 165); */
+    filter: brightness(75%);
+}
+button:active{
+    filter:brightness(125%);
+}
+
+#zero{
+    grid-column: span 2;
+}
+
+.operand{
+    background-color: rgb(148, 0, 0);
+    color: white;
+}
+
+.decimal{
+    background:  rgb(148, 0, 0);
+    color: white;
+}
+
+.operator{
+    background-color:rgb(103, 131, 255);
+    color: white;
+
+}
+
+.equals{
+    background-color:rgb(103, 131, 255);
+    color: white;
+
+}
+
+.clear{
+    background-color: rgb(82, 0, 175);
+    color: white;
+
+}
+.sign{
+    background-color: rgb(82, 0, 175);
+    color: white;
+
+}
+.delete{
+    background-color: rgb(82, 0, 175);
+    color: white;
+
+}
